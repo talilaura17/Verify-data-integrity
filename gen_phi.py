@@ -186,15 +186,11 @@ def interactive_program():
 
     g = group.random(G1)
 
-    print("g:", g)
-
 
 
     # 公鑰 Pp = g^alpha
 
     Pp = g ** alpha
-
-    print("Pp:", Pp)
 
 
 
@@ -203,8 +199,6 @@ def interactive_program():
     a_values = [group.random(ZR) for _ in range(s)]  # 隨機生成的 a_j 值
 
     u_values = [g ** a for a in a_values]  # 計算 u_j = g^a_j
-
-    print("u_values[0]:", u_values[0])
 
 
 
@@ -224,8 +218,6 @@ def interactive_program():
 
 	
 
-    print("phi_values[0]:", phi_values[0])
-
     # 將數據保存到 file_id.txt
 
     output_file = f"{file_id}.txt"
@@ -241,3 +233,6 @@ def interactive_program():
 # 執行互動程式
 
 interactive_program()
+
+
+
